@@ -94,7 +94,7 @@ function LeetCodeProfile() {
                 {!errResponse && profileData && (
                     <div className='w-11/12 mx-auto text-center flex flex-col justify-center items-center'>
                         <p className=' max-w-xl text-center'>
-                            Hello, {profileData?.matchedUser?.profile?.realName}! 🤔 Ready for a dose of virtual
+                            Hello, {profileData?.matchedUser?.profile?.realName || profileData?.matchedUser?.username}! 🤔 Ready for a dose of virtual
                             sass or a hearty pat on the back? How do you want to be treated today: like a coding superstar
                             or a lovable underdog in need of a friendly roast? 😄
                         </p>
