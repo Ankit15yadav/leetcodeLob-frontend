@@ -73,12 +73,16 @@ function LeetCodeProfile() {
                     profileData?.matchedUser?.badges.length > 0 ?
                         (
                             imageDAta.map((badge) => (
-                                <img
-                                    src={badge.img}
-                                    key={badge.id}
-                                    className=' animate-pulse'
-                                    width={100}
-                                />
+                                badge.img ? (
+                                    <img
+                                        src={badge?.img}
+                                        alt="Try Try It will be visible someday"
+                                        key={badge.id}
+                                        className=' animate-pulse '
+                                        width={100}
+                                    />
+                                ) : ('')
+
                             ))
                         )
                         :
