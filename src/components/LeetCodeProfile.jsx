@@ -98,7 +98,7 @@ function LeetCodeProfile() {
                             <GeminiResponse response={profileData} setGemini={setGemini} roast={true} />
                         }
                         {gemini && (
-                            <div className='w-11/12 mx-auto text-sm text-gray-400 mt-3 tracking-wide bg-gray-800 p-4 rounded-lg leading-loose'>
+                            <div className='w-11/12 mx-auto text-sm text-gray-400 mt-3 tracking-wide bg-gray-800 p-4 rounded-lg leading-loose mb-10'>
                                 <p>
                                     {gemini}
                                 </p>
