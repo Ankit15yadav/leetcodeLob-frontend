@@ -119,13 +119,16 @@ const GeminiResponse = ({ response, setGemini }) => {
         <div className='flex justify-between w-11/12 mx-auto mt-6'>
             <button onClick={() => handleButtonClick(true)}
                 className=' w-fit px-4 py-2 bg-red-500 rounded-md'
+                disabled={isGrilling}
             >
                 {
                     isGrilling ? ('Grilling...') : ('Grill Me')
                 }
             </button>
-            <button onClick={() => handleButtonClick(false)}
+            <button onClick={() => handleButtonClick(false)
+            }
                 className=' w-fit px-4 py-2 bg-emerald-500 rounded-md'
+                disabled={isCheering}
             >
                 {
                     isCheering ? ('Cheering...') : ('Cheer Me')
